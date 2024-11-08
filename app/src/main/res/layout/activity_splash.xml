@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <TextView
+        android:id="@+id/textCineWave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/graphik_regular"
+        android:text="CineWave"
+        android:textSize="22sp" />
+    <TextView
+        android:id="@+id/skipTextClickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        app:layout_constraintTop_toTopOf="@id/textCineWave"
+        app:layout_constraintBottom_toBottomOf="@id/textCineWave"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="26dp"
+        android:textColor="#B5B5C9"
+        android:fontFamily="@font/graphik_regular"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/elementsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/skipTextClickable"
+        android:layout_marginTop="160dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/dots_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/elementsViewPager"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="26dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

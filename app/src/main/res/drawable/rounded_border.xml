@@ -1,0 +1,6 @@
+<!-- rounded_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="10dp" /> <!-- Устанавливаем радиус для скругленных углов -->
+    <stroke android:color="@color/rounded_border_color" android:width="2dp" /> <!-- Устанавливаем цвет и толщину обводки -->
+</shape>

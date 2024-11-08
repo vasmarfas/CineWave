@@ -1,0 +1,6 @@
+<resources>
+    <style name="Widget.Theme.Final_android_lvl1.MyView" parent="">
+        <item name="android:background">@color/gray_600</item>
+        <item name="exampleColor">@color/light_blue_600</item>
+    </style>
+</resources>

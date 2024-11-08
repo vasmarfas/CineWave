@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="170dp"
+    android:layout_height="170dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/rounded_border"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/collectionCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_user"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+        android:id="@+id/collectionRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/icon_cross_close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/collectionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/graphik_regular"
+        android:textSize="12sp"
+        android:textColor="@color/light_text_color"
+        android:maxLines="1"
+        android:layout_margin="4dp"
+        android:ellipsize="end"
+        android:text="@string/temp_filmname"
+        app:layout_constraintTop_toBottomOf="@id/collectionCover"
+        app:layout_constraintStart_toStartOf="@id/collectionCover"
+        app:layout_constraintEnd_toEndOf="@id/collectionCover"/>
+    <ImageView
+        android:id="@+id/collectionVector"
+        android:layout_width="40dp"
+        android:layout_height="23dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/film_rating_vector"
+        app:layout_constraintTop_toBottomOf="@id/collectionName"
+        app:layout_constraintStart_toStartOf="@id/collectionCover"
+        app:layout_constraintEnd_toEndOf="@id/collectionCover"
+        android:padding="3dp"/>
+    <TextView
+        android:id="@+id/collectionItemCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp_0"
+        android:fontFamily="@font/graphik_medium"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/collectionVector"
+        app:layout_constraintBottom_toBottomOf="@id/collectionVector"
+        app:layout_constraintStart_toStartOf="@id/collectionVector"
+        app:layout_constraintEnd_toEndOf="@id/collectionVector"/>
+
+
+    <!-- drawable/frame_7294.xml -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

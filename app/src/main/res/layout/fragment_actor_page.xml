@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.ActorPageFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="24dp"
+            android:padding="5dp"
+
+            android:background="@null"
+            android:src="@drawable/iconbackbutton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/actorPhoto"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/backButton" />
+
+        <TextView
+            android:id="@+id/actorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:text="@string/name"
+            android:fontFamily="@font/graphik_semibold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/actorPhoto"
+            app:layout_constraintTop_toTopOf="@id/actorPhoto" />
+
+        <TextView
+            android:id="@+id/actorRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/role"
+            android:fontFamily="@font/graphik_light"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/actorName"
+            app:layout_constraintTop_toBottomOf="@id/actorName" />
+
+        <TextView
+            android:id="@+id/bestFilms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/graphik_semibold"
+            android:text="@string/best"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/actorPhoto"
+            app:layout_constraintTop_toBottomOf="@id/actorPhoto" />
+
+        <TextView
+            android:id="@+id/bestFilmsAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/bestFilms"
+            app:layout_constraintBottom_toBottomOf="@id/bestFilms"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="26dp"
+            android:textColor="@color/purple_clickable_color"
+            android:text="@string/all_with_arrow"
+            android:fontFamily="@font/graphik_medium"
+            android:textSize="14sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bestFilmsRecycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/bestFilms"
+            app:layout_constraintTop_toBottomOf="@id/bestFilms" />
+
+        <TextView
+            android:id="@+id/filmography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/graphik_semibold"
+            android:text="@string/filmography"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/bestFilmsRecycler"
+            app:layout_constraintTop_toBottomOf="@id/bestFilmsRecycler" />
+        <TextView
+            android:id="@+id/filmographyAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/filmography"
+            app:layout_constraintBottom_toBottomOf="@id/filmography"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="26dp"
+            android:textColor="@color/purple_clickable_color"
+            android:text="@string/to_list_with_arrow"
+            android:fontFamily="@font/graphik_medium"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/filmographyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/graphik_light"
+            android:text="@string/film_count"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/filmography"
+            app:layout_constraintTop_toBottomOf="@id/filmography" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

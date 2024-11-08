@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!-- NestedScrollingChild goes here (NestedScrollView, RecyclerView, etc.). -->
+    <TextView
+        android:id="@+id/interest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/you_were_interested"
+        android:fontFamily="@font/graphik_semibold"
+        android:textSize="18sp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchInterestRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:nestedScrollingEnabled="false"
+        />
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:defaultMarginsEnabled="false"
+            app:layout_scrollFlags="enterAlways"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:hint="@string/films_actors_directors" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ImageButton
+        android:id="@+id/searchPropsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iconoptions"
+        app:layout_anchor="@id/search_bar"
+        android:padding="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="40dp"
+        app:layout_anchorGravity="center_vertical|right"
+        android:background="@null"/>
+
+    <com.google.android.material.search.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/films_actors_directors"
+        app:layout_anchor="@id/search_bar">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/searchNotFoundText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/graphik_regular"
+            android:textSize="16sp"
+            android:layout_marginTop="64dp"
+            android:textAlignment="center"
+            android:text="@string/unfortunately_not_found"
+            android:visibility="gone"
+            />
+        <ProgressBar
+            android:id="@+id/progressBarSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleY="0.3"
+            android:scaleX="0.3"
+            android:visibility="gone"
+            />
+    </com.google.android.material.search.SearchView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

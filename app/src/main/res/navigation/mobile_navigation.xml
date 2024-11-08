@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/mobile_navigation_home">
+    <include app:graph="@navigation/mobile_navigation_home"/>
+    <include app:graph="@navigation/mobile_navigation_search"/>
+    <include app:graph="@navigation/mobile_navigation_profile"/>
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_home"-->
+<!--        android:name="ru.vasmarfas.cinewave.ui.home.HomeFragment"-->
+<!--        android:label="Home"-->
+<!--        tools:layout="@layout/fragment_home" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_navigation_home_to_allFilmsFragment"-->
+<!--            app:destination="@id/allFilmsFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_navigation_home_to_filmPageFragment"-->
+<!--            app:destination="@id/filmPageFragment" />-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_search"-->
+<!--        android:name="ru.vasmarfas.cinewave.ui.search.SearchFragment"-->
+<!--        tools:layout="@layout/fragment_search" >-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_profile"-->
+<!--        android:name="ru.vasmarfas.cinewave.ui.profile.ProfileFragment"-->
+<!--        tools:layout="@layout/fragment_profile" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_navigation_profile_to_filmPageFragment"-->
+<!--            app:destination="@id/filmPageFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_navigation_profile_to_actorPageFragment"-->
+<!--            app:destination="@id/actorPageFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_navigation_profile_to_allFilmsFragment"-->
+<!--            app:destination="@id/allFilmsFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/allFilmsFragment"-->
+<!--        android:name="ru.vasmarfas.cinewave.ui.home.AllFilmsFragment"-->
+<!--        android:label="fragment_all_films"-->
+<!--        tools:layout="@layout/fragment_all_films" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_allFilmsFragment_to_filmPageFragment"-->
+<!--            app:destination="@id/filmPageFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_allFilmsFragment_to_actorPageFragment"-->
+<!--            app:destination="@id/actorPageFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/filmPageFragment"-->
+<!--        android:name="ru.vasmarfas.cinewave.ui.home.FilmPageFragment"-->
+<!--        android:label="fragment_film_page"-->
+<!--        tools:layout="@layout/fragment_film_page" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_filmPageFragment_to_actorPageFragment"-->
+<!--            app:destination="@id/actorPageFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_filmPageFragment_to_filmGalleryFragment"-->
+<!--            app:destination="@id/filmGalleryFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_filmPageFragment_self"-->
+<!--            app:destination="@id/filmPageFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_filmPageFragment_to_allFilmsFragment"-->
+<!--            app:destination="@id/allFilmsFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/actorPageFragment"-->
+<!--        android:name="ru.vasmarfas.cinewave.ui.home.ActorPageFragment"-->
+<!--        android:label="fragment_actor_page"-->
+<!--        tools:layout="@layout/fragment_actor_page" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_actorPageFragment_to_filmPageFragment"-->
+<!--            app:destination="@id/filmPageFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_actorPageFragment_to_allFilmsFragment"-->
+<!--            app:destination="@id/allFilmsFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/filmGalleryFragment"-->
+<!--        android:name="ru.vasmarfas.cinewave.ui.home.FilmGalleryFragment"-->
+<!--        android:label="fragment_film_gallery"-->
+<!--        tools:layout="@layout/fragment_film_gallery" />-->
+
+
+</navigation>
